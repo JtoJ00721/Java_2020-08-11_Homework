@@ -74,12 +74,19 @@ public class BookServiceImplV1 implements BookService{
 		
 		LineTool line = new LineTool();
 		
-		System.out.println("\n\n"+line.DLine(30));
-		System.out.println("입력한 도서정보");
-		System.out.println(line.SLine(30));
-		System.out.printf("도서코드 : %s\n",bVO.getBookCode());
-		System.out.printf("도서명 : %s\n",bVO.getBookName());
-		System.out.println(line.DLine(30)+"\n\n");
+	
+		if(bVO.getBookCode() == null || bVO.getBookName() == null) {
+			System.out.println("\n\n입력을 취소했습니다 ><\n\n");
+		}else {
+			System.out.println("\n\n"+line.DLine(30));
+			System.out.println("입력한 도서정보");
+			System.out.println(line.SLine(30));
+			System.out.printf("도서코드 : %s\n",bVO.getBookCode());
+			System.out.printf("도서명 : %s\n",bVO.getBookName());
+			System.out.println(line.DLine(30)+"\n\n");
+		}
+
+
 		
 	}
 

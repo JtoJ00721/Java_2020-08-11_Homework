@@ -29,7 +29,7 @@ public class BookControllServiceImpl implements BookControllService {
 		System.out.println("\n\n\n서비스 프로그램이 종료됩니다\n"
 				+ "developer of this stupid program >>>>> 쩔쩔이(J to J) <<<<<\n"
 				+ "version 1.1.1"
-				+ "release date of this foolish program >>>>> 2020-08-11 <<<<<\n\n"
+				+ " release date of this foolish program >>>>> 2020-08-11 <<<<<\n\n"
 				+ "퇴근이지롱 ><");
 	}
 	
