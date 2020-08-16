@@ -29,6 +29,7 @@ public class BookEx_02 {
 			controllServ.ServiceIntroduce();
 			
 			String breakPoint = scan.nextLine();
+			
 			if(breakPoint.equals("off")) {
 				break;
 			}

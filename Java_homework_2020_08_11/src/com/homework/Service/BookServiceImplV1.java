@@ -14,6 +14,7 @@ public class BookServiceImplV1 implements BookService{
 		
 		Scanner scan = new Scanner(System.in);
 		ShowInputProblem showIP = new ShowInputProblem();
+		
 		String strBCode = "";
 		String strBName = "";
 		
@@ -47,7 +48,7 @@ public class BookServiceImplV1 implements BookService{
 			break;
 		}
 		
-		while(true) {	
+		while(true) {
 			System.out.print("도서명(quit:입력취소) \n>> ");
 			strBName = scan.nextLine();
 			
@@ -72,18 +73,16 @@ public class BookServiceImplV1 implements BookService{
 	@Override
 	public void output() {
 		
-		LineTool line = new LineTool();
-		
-	
 		if(bVO.getBookCode() == null || bVO.getBookName() == null) {
 			System.out.println("\n\n입력을 취소했습니다 ><\n\n");
 		}else {
-			System.out.println("\n\n"+line.DLine(30));
+			System.out.println("\n\n"+LineTool.DLine(30));
 			System.out.println("입력한 도서정보");
-			System.out.println(line.SLine(30));
+			System.out.println(LineTool.SLine(30));
 			System.out.printf("도서코드 : %s\n",bVO.getBookCode());
 			System.out.printf("도서명 : %s\n",bVO.getBookName());
-			System.out.println(line.DLine(30)+"\n\n");
+			System.out.println(LineTool.DLine(30)+"\n\n");
+			
 		}
 
 

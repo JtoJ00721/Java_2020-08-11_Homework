@@ -4,8 +4,7 @@ public class ToolTester {
 	
 	public static void main(String[] args) {
 		
-		LineTool lTool = new LineTool();
-		System.out.println(lTool.DLine(7));
+		System.out.println(LineTool.DLine(7));
 		
 	}
 	
